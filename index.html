@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors Demo</title>
+    <style>
+        /* Universal Selector */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Element Selector */
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+            color: #444;
+        }
+
+        /* Class Selector */
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        /* ID Selector */
+        #highlight {
+            background-color: #ffeb3b;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+
+        /* Attribute Selector */
+        input[type="text"] {
+            border: 1px solid #ccc;
+            padding: 5px;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        /* Child Combinator (Bonus) */
+        ul > li {
+            list-style-type: none;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Selectors Demo</h1>
+
+    <!-- Universal Selector in Action -->
+    <p>The universal selector ensures consistent margins and padding across elements.</p>
+
+    <!-- Element Selector in Action -->
+    <p>This paragraph demonstrates the element selector for <code>p</code> tags.</p>
+
+    <!-- Class Selector in Action -->
+    <a href="#" class="btn">Click Me</a>
+
+    <!-- ID Selector in Action -->
+    <div id="highlight">This box is styled using an ID selector.</div>
+
+    <!-- Attribute Selector in Action -->
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name">
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" placeholder="Enter your email">
+    </form>
+
+    <!-- Child Combinator in Action -->
+    <ul>
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+    </ul>
+</body>
+</html>
