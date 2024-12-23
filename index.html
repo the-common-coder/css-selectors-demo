@@ -1,99 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Selectors Demo</title>
-    <style>
-        /* Universal Selector */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        /* Element Selector */
-        p {
-            font-size: 16px;
-            line-height: 1.5;
-            color: #333;
-        }
-
-        h1 {
-            text-align: center;
-            margin: 20px 0;
-            color: #444;
-        }
-
-        /* Class Selector */
-        .btn {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            text-decoration: none;
-            font-size: 16px;
-            text-align: center;
-            cursor: pointer;
-        }
-
-        .btn:hover {
-            background-color: #0056b3;
-        }
-
-        /* ID Selector */
-        #highlight {
-            background-color: #ffeb3b;
-            padding: 10px;
-            border: 1px solid #ccc;
-        }
-
-        /* Attribute Selector */
-        input[type="text"] {
-            border: 1px solid #ccc;
-            padding: 5px;
-            width: 100%;
-            margin-bottom: 10px;
-        }
-
-        /* Child Combinator (Bonus) */
-        ul > li {
-            list-style-type: none;
-            margin: 5px 0;
-        }
-    </style>
+    <link rel="stylesheet" href="./styles.css">
 </head>
+
 <body>
     <h1>CSS Selectors Demo</h1>
 
-    <!-- Universal Selector in Action -->
-    <p>The universal selector ensures consistent margins and padding across elements.</p>
+    <main>
+        <!-- Universal Selector Demo -->
+        <section>
+            <h2>Universal Selector</h2>
 
-    <!-- Element Selector in Action -->
-    <p>This paragraph demonstrates the element selector for <code>p</code> tags.</p>
+            <p>The universal selector can be used to reset margin and padding for all elements.</p>
+        </section>
 
-    <!-- Class Selector in Action -->
-    <a href="#" class="btn">Click Me</a>
+        <!-- Element Selector Demo -->
+        <section>
+            <h2>Element Selector</h2>
 
-    <!-- ID Selector in Action -->
-    <div id="highlight">This box is styled using an ID selector.</div>
+            <p>This demonstrates the element selector for <code>h1</code>, <code>h2</code>, <code>main</code>, <code>code</code> and <code>p</code> tags.</p>
+        </section>
 
-    <!-- Attribute Selector in Action -->
-    <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" placeholder="Enter your name">
+        <!-- ID Selector Demo -->
+        <section>
+            <h2>ID Selector</h2>
 
-        <label for="email">Email:</label>
-        <input type="text" id="email" placeholder="Enter your email">
-    </form>
+            <article id="main-article">
+                This section is being styled using an ID selector. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </article>
+        </section>
 
-    <!-- Child Combinator in Action -->
-    <ul>
-        <li>First item</li>
-        <li>Second item</li>
-        <li>Third item</li>
-    </ul>
+        <!-- Class Selector Demo -->
+        <section>
+            <h2>Class Selector</h2>
+
+            <div>The highlighted part of this box is styled using a <span class="highlight">class selector</span>.</div>
+            <hr class="divider">
+            <a href="#" class="btn">Click Me</a>
+        </section>
+
+        <!-- Attribute Selector Demo -->
+        <section>
+            <h2>Attribute Selector</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Enter your name">
+
+                <label for="email">Email:</label>
+                <input type="text" id="email" placeholder="Enter your email">
+
+                <label for="subscribe">Subscribe to our newsletter:</label>
+                <input type="checkbox" id="subscribe">
+            </form>
+        </section>
+    </main>
 </body>
+
 </html>
